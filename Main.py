@@ -6,7 +6,8 @@ compar = dict (zip(deck, value))
 print (compar)
 player1 = ' '
 player2 = ' '
-
+win1 = 0
+win2 = 0
 
 def shuffled_deck(deck):
     random.shuffle(deck)
@@ -26,25 +27,22 @@ while len(deck) > 0:
     player2 = deal_cards(deck, card)
     pl2 = compar.get(player2)
     deck.pop(card)
-    print ("Pirmojo žaidėjo korta: ", player1)
-    print ("Antrojo žaidėjo korta: ", player2)
+    print ("First player's card: ", player1)
+    print ("Second player's card: ", player2)
 
     if pl1 > pl2:
-        print (player1, " ", "Laimi pirmasis žaidėjas")
+        win1 += 1
+        print (player1, " ", "First player wins")
     elif pl1 < pl2:
-        print (player2, " ", "Laimi antrasis žaidėjas")
+        win2 += 1
+        print (player2, " ", "Second player wins")
     elif pl1 == pl2:
-        print ("Lygiosios")
-
-
-def test_compare_cards():
-    assert compare_cards('J', 'A') == 1
-    assert compare_cards('8', '10') == 1
-    assert compare_cards('J', '2') == 0
-    assert compare_cards('K', 'K') == -1
-
+        print ("It's a Tie")
+print ("First player won - ", win1, " times")
+print ("Second player won - ", win2, " times")
 
 def compare_cards(C1, C2):
+    print (C1)
     if C1 not in deck:
         raise ValueError("Netinkama korta")
     C1 = compar.get(C1)
@@ -56,7 +54,5 @@ def compare_cards(C1, C2):
     elif C1 == C2:
         return -1 
 
-    
-test_compare_cards()
 
 
