@@ -37,3 +37,23 @@ while len(deck) > 0:
         print ("Lygiosios")
 
 
+def test_compare_cards():
+    assert compare_cards('J', 'A') == 1
+    assert compare_cards('4', 'A') == 1
+    assert compare_cards('J', '2') == 0
+    assert compare_cards('K', 'K') == -1
+
+
+def compare_cards(C1, C2):
+    C1 = compar.get(C1)
+    C2 = compar.get(C2)
+    if C1 < C2:
+        return 1
+    elif C1 > C2:
+        return 0
+    elif C1 == C2:
+        return -1 
+
+    
+
+
