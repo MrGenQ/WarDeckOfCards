@@ -39,7 +39,7 @@ def main_cycle(deck, win1, win2):
 
 def compare_cards(C1, C2, deck, compar):
     if C1 not in deck:
-        raise ValueError("Netinkama korta")
+        raise ValueError("The card doesn't exist")
     C1 = compar.get(C1)
     C2 = compar.get(C2)
     if C1 < C2:
@@ -61,4 +61,4 @@ if __name__ == "__main__":
     player2 = ' '
     win1 = 0
     win2 = 0
-    main_cycle(deck, win1, win2
+    main_cycle(deck, win1, win2)
