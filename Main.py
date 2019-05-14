@@ -44,7 +44,7 @@ print ("Second player won - ", win2, " times")
 def compare_cards(C1, C2):
     print (C1)
     if C1 not in deck:
-        raise ValueError("Netinkama korta")
+        raise ValueError("The Card Doesn't exsist")
     C1 = compar.get(C1)
     C2 = compar.get(C2)
     if C1 < C2:
@@ -52,7 +52,4 @@ def compare_cards(C1, C2):
     elif C1 > C2:
         return 0
     elif C1 == C2:
-        return -1 
-
-
-
+        return 2 
