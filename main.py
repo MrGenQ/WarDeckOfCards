@@ -1,5 +1,8 @@
 import random
-
+import logging
+import logging.config
+logging.basicConfig(filename='logging', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
+logging.info("The GAME has began")
 
 def shuffled_deck(deck):
     random.shuffle(deck)
@@ -47,7 +50,7 @@ def compare_cards(C1, C2, deck, compar):
     elif C1 > C2:
         return 0
     elif C1 == C2:
-        return -1
+        return -1  
 
 
 if __name__ == "__main__":
@@ -62,3 +65,5 @@ if __name__ == "__main__":
     win1 = 0
     win2 = 0
     main_cycle(deck, win1, win2)
+
+logging.info("The GAME has ended")
