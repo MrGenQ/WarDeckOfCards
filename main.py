@@ -1,8 +1,7 @@
 import random
 import logging
 import logging.config
-logging.basicConfig(filename='logging', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
-logging.info("The GAME has began")
+
 
 def shuffled_deck(deck):
     random.shuffle(deck)
@@ -24,8 +23,8 @@ def main_cycle(deck, win1, win2):
         player2 = deal_cards(deck, card)
         pl2 = compar.get(player2)
         deck.pop(card)
-        print("First player's card: ", player1)
-        print("Second player's card: ", player2)
+        logging.info("First player's card: ", player1)
+        logging.info("Second player's card: ", player2)
 
         if pl1 > pl2:
             win1 += 1
@@ -36,8 +35,8 @@ def main_cycle(deck, win1, win2):
         elif pl1 == pl2:
             print("It's a Tie")
 
-    print("First player won - ", win1, " times")
-    print("Second player won - ", win2, " times")
+    logging.info("First player won - ", win1, " times")
+    logging.info("Second player won - ", win2, " times")
 
 
 def compare_cards(C1, C2, deck, compar):
@@ -55,15 +54,18 @@ def compare_cards(C1, C2, deck, compar):
 
 if __name__ == "__main__":
 
+    logging.basicConfig(level = logging.INFO, filename='logging', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
+
+    logging.info('The GAME has started')
+
     deck = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']*4
     value = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
     global compar
     compar = dict(zip(deck, value))
-    print(compar)
     player1 = ' '
     player2 = ' '
     win1 = 0
     win2 = 0
     main_cycle(deck, win1, win2)
+    logging.info('The GAME has ended')
 
-logging.info("The GAME has ended")
