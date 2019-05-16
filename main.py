@@ -3,6 +3,7 @@ import logging
 import logging.config
 
 
+
 def shuffled_deck(deck):
     random.shuffle(deck)
     return deck
@@ -23,20 +24,20 @@ def main_cycle(deck, win1, win2):
         player2 = deal_cards(deck, card)
         pl2 = compar.get(player2)
         deck.pop(card)
-        logging.info("First player's card: ", player1)
-        logging.info("Second player's card: ", player2)
+        logger.info("First player's card: %s", player1)
+        logger.info("Second player's card: %s", player2)
 
         if pl1 > pl2:
             win1 += 1
-            print(player1, " ", "First player wins")
+            logger.info("First player wins with a card: %s", player1)
         elif pl1 < pl2:
             win2 += 1
-            print(player2, " ", "Second player wins")
+            logger.info("Second player wins with a card: %s", player2)
         elif pl1 == pl2:
-            print("It's a Tie")
+            logger.info("It's a Tie")
 
-    logging.info("First player won - ", win1, " times")
-    logging.info("Second player won - ", win2, " times")
+    logger.info("First player won - %s", win1)
+    logger.info("Second player won - %s", win2)
 
 
 def compare_cards(C1, C2, deck, compar):
@@ -54,9 +55,14 @@ def compare_cards(C1, C2, deck, compar):
 
 if __name__ == "__main__":
 
-    logging.basicConfig(level = logging.INFO, filename='logging', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
+    logging.basicConfig(level = logging.INFO, filename='logging', filemode='w')
+    logger = logging.getLogger(__name__)
+    admin_handler = logging.FileHandler('logging')
+    admin_handler.setLevel(logging.INFO)
+    logger.addHandler(admin_handler)
+    logging.error(f'{admin_handler} started the program')
+    logger.info('The GAME has started')
 
-    logging.info('The GAME has started')
 
     deck = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']*4
     value = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
@@ -67,5 +73,5 @@ if __name__ == "__main__":
     win1 = 0
     win2 = 0
     main_cycle(deck, win1, win2)
-    logging.info('The GAME has ended')
+    logger.info('The GAME has ended')
 
