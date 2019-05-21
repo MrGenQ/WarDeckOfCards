@@ -1,2 +1,83 @@
 WARNING: :<FileHandler C:\Users\GenQ\Desktop\WarDeckOfCards\logging (INFO)> started the program
 INFO: :The GAME has started
+INFO: :First player's card: Q
+INFO: :Second player's card: 8
+INFO: :First player wins with a card: Q
+INFO: :First player's card: Q
+INFO: :Second player's card: 7
+INFO: :First player wins with a card: Q
+INFO: :First player's card: 8
+INFO: :Second player's card: 2
+INFO: :First player wins with a card: 8
+INFO: :First player's card: A
+INFO: :Second player's card: 8
+INFO: :First player wins with a card: A
+INFO: :First player's card: 2
+INFO: :Second player's card: 10
+INFO: :Second player wins with a card: 10
+INFO: :First player's card: 5
+INFO: :Second player's card: 8
+INFO: :Second player wins with a card: 8
+INFO: :First player's card: 5
+INFO: :Second player's card: A
+INFO: :Second player wins with a card: A
+INFO: :First player's card: 2
+INFO: :Second player's card: 9
+INFO: :Second player wins with a card: 9
+INFO: :First player's card: 3
+INFO: :Second player's card: 6
+INFO: :Second player wins with a card: 6
+INFO: :First player's card: A
+INFO: :Second player's card: J
+INFO: :First player wins with a card: A
+INFO: :First player's card: K
+INFO: :Second player's card: 5
+INFO: :First player wins with a card: K
+INFO: :First player's card: 7
+INFO: :Second player's card: 6
+INFO: :First player wins with a card: 7
+INFO: :First player's card: 2
+INFO: :Second player's card: 7
+INFO: :Second player wins with a card: 7
+INFO: :First player's card: K
+INFO: :Second player's card: 10
+INFO: :First player wins with a card: K
+INFO: :First player's card: 3
+INFO: :Second player's card: 7
+INFO: :Second player wins with a card: 7
+INFO: :First player's card: 10
+INFO: :Second player's card: J
+INFO: :Second player wins with a card: J
+INFO: :First player's card: Q
+INFO: :Second player's card: 4
+INFO: :First player wins with a card: Q
+INFO: :First player's card: A
+INFO: :Second player's card: J
+INFO: :First player wins with a card: A
+INFO: :First player's card: J
+INFO: :Second player's card: 3
+INFO: :First player wins with a card: J
+INFO: :First player's card: K
+INFO: :Second player's card: 4
+INFO: :First player wins with a card: K
+INFO: :First player's card: 4
+INFO: :Second player's card: 6
+INFO: :Second player wins with a card: 6
+INFO: :First player's card: 6
+INFO: :Second player's card: 4
+INFO: :First player wins with a card: 6
+INFO: :First player's card: 9
+INFO: :Second player's card: 9
+INFO: :It's a Tie
+INFO: :First player's card: K
+INFO: :Second player's card: 10
+INFO: :First player wins with a card: K
+INFO: :First player's card: Q
+INFO: :Second player's card: 9
+INFO: :First player wins with a card: Q
+INFO: :First player's card: 5
+INFO: :Second player's card: 3
+INFO: :First player wins with a card: 5
+INFO: :First player won - 16
+INFO: :Second player won - 9
+INFO: :The GAME has ended

@@ -67,10 +67,8 @@ if __name__ == "__main__":
     #--------------------------------------
 
     #using argparse to assign names to the players
+    global parser
     parser = argparse.ArgumentParser()
-    parser.add_argument("echo")
-    args = parser.parse_args()
-    print(args.echo)
 
     #--------------------------------------
 
