@@ -11,7 +11,7 @@ class ComparingCards(unittest.TestCase):
         value = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
         compar = dict(zip(deck, value))
         self.assertEqual(compare_cards('J', 'A', deck, compar), 1)
-        self.assertEqual(compare_cards('Q', '10', deck, compar), 0)
+        self.assertEqual(compare_cards('10', '7', deck, compar), 0)
         self.assertEqual(compare_cards('K', 'K', deck, compar), -1)
 
 

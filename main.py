@@ -56,11 +56,11 @@ def compare_cards(C1, C2, deck, compar):
 if __name__ == "__main__":
 
     logging.basicConfig(level = logging.INFO, filename='logging', filemode='w')
-    logger = logging.getLogger(__name__)
+    logger = logging.getLogger(" ")
     admin_handler = logging.FileHandler('logging')
     admin_handler.setLevel(logging.INFO)
     logger.addHandler(admin_handler)
-    logging.error(f'{admin_handler} started the program')
+    logger.warning(f'{admin_handler} started the program')
     logger.info('The GAME has started')
 
 
