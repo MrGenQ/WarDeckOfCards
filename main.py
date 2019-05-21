@@ -1,24 +1,25 @@
 import random
 import logging
 import logging.config
+import argparse
 
 
 
-def shuffled_deck(deck):
+def shuffled_deck(deck):                #a function to shuffle the deck at a random order
     random.shuffle(deck)
     return deck
 
 
-def deal_cards(deck, card):
+def deal_cards(deck, card):             #Gives a card to each player
     player = deck[card]
     return player
 
 
-def main_cycle(deck, win1, win2):
-    while len(deck) > 0:
-        card = 0
-        deck = shuffled_deck(deck)
-        player1 = deal_cards(deck, card)
+def main_cycle(deck, win1, win2):           #A main function to do all of the nessasarry calculations
+    while len(deck) > 0:                    #Shuffles a dech before each card drawing
+        card = 0                            #Gives a first card to the first player
+        deck = shuffled_deck(deck)          #and then gives the following card to the next player
+        player1 = deal_cards(deck, card)    #removes the cards that are drawn from the deck
         pl1 = compar.get(player1)
         deck.pop(card)
         player2 = deal_cards(deck, card)
@@ -40,8 +41,8 @@ def main_cycle(deck, win1, win2):
     logger.info("Second player won - %s", win2)
 
 
-def compare_cards(C1, C2, deck, compar):
-    if C1 not in deck:
+def compare_cards(C1, C2, deck, compar):        #A function to determine which of the two cards is higher
+    if C1 not in deck:                          #for a test_main.unutesst.py
         raise ValueError("The card doesn't exist")
     C1 = compar.get(C1)
     C2 = compar.get(C2)
@@ -54,7 +55,8 @@ def compare_cards(C1, C2, deck, compar):
 
 
 if __name__ == "__main__":
-
+    
+    #logging program events
     logging.basicConfig(level = logging.INFO, filename='logging', filemode='w')
     logger = logging.getLogger(" ")
     admin_handler = logging.FileHandler('logging')
@@ -62,16 +64,24 @@ if __name__ == "__main__":
     logger.addHandler(admin_handler)
     logger.warning(f'{admin_handler} started the program')
     logger.info('The GAME has started')
+    #--------------------------------------
 
+    #using argparse to assign names to the players
+    parser = argparse.ArgumentParser()
+    parser.add_argument("echo")
+    args = parser.parse_args()
+    print(args.echo)
+
+    #--------------------------------------
 
     deck = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']*4
     value = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
     global compar
-    compar = dict(zip(deck, value))
+    compar = dict(zip(deck, value))     #making a dictonary to assign a value to each card
     player1 = ' '
     player2 = ' '
     win1 = 0
     win2 = 0
     main_cycle(deck, win1, win2)
-    logger.info('The GAME has ended')
+    logger.info('The GAME has ended')           #loging the end of the game to file logging.txt
 
