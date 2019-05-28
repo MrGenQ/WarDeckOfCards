@@ -3,29 +3,28 @@ import logging
 import logging.config
 import argparse
 
-
-
 def shuffled_deck(deck):
     """function to shuffle the deck at a random order"""
     random.shuffle(deck)
     return deck
-
 
 def deal_cards(deck, card):
     """Gives a card to each player"""             
     player = deck[card]
     return player
 
-
 def main_cycle(deck, win1, win2): 
     """
     A main function to do all of the nessasarry calculations
+
     Shuffles a dech before each card drawing
+
     Gives a first card to the first player
     and then gives the following card to the next player
+
     removes the cards that are drawn from the deck 
     """ 
- 
+
     parser = argparse.ArgumentParser()
     parser.add_argument('--p1name', type=str, default='Jon',
                         help='First players name?')
@@ -37,15 +36,13 @@ def main_cycle(deck, win1, win2):
         card = 0                
         deck = shuffled_deck(deck)
         player1 = deal_cards(deck, card)
-        pl1 = compar.get(player1)
+        pl1 = assigned_card_value.get(player1)
         deck.pop(card)
         player2 = deal_cards(deck, card)
-        pl2 = compar.get(player2)
+        pl2 = assigned_card_value.get(player2)
         deck.pop(card)  
-        logger.info("Player %s", args.p1name)
-        logger.info("drew a card -- %s", player1)
-        logger.info("Player %s", args.p2name)
-        logger.info("drew a card -- %s", player2)
+        logger.info("Player %s ", args.p1name + " drew a card -> " + player1)
+        logger.info("Player %s ", args.p2name + " drew a card -> " + player2)
 
         if pl1 > pl2:
             win1 += 1
@@ -60,39 +57,45 @@ def main_cycle(deck, win1, win2):
     logger.info("Second player won - %s", win2)
 
 
-def compare_cards(C1, C2, deck, compar):
+def compare_cards(card1, card2, deck, assigned_card_value):
     """A function for testing to determine which of the two cards is higher """
-    if C1 not in deck:                          
+    if card1 not in deck:                          
         raise ValueError("The card doesn't exist")
-    C1 = compar.get(C1)
-    C2 = compar.get(C2)
-    if C1 < C2:
+    if card2 not in deck:                          
+        raise ValueError("The card doesn't exist")
+    card1 = assigned_card_value.get(card1)
+    card2 = assigned_card_value.get(card2)
+    if card1 < card2:
         return 1
-    elif C1 > C2:
+    elif card1 > card2:
         return 0
-    elif C1 == C2:
+    elif card1 == card2:
         return -1 
- 
 
-if __name__ == "__main__":
-    
-    #logging program events
+def create_logger():
+    """logging function
+
+    assigns a new logger
+
+    raises your attention that the program assigned a logger """
     logging.basicConfig(level = logging.INFO, filename='logging', filemode='w')
     logger = logging.getLogger(" ")
     admin_handler = logging.FileHandler('logging')
     admin_handler.setLevel(logging.INFO)
     logger.addHandler(admin_handler)
-    logger.warning(f'{admin_handler} started the program')
-    logger.info('The GAME has started')
+    logger.warning(f'{admin_handler} created a new logger')
+    return logger
 
-    #--------------------------------------
+if __name__ == "__main__":
 
     deck = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']*4
     value = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
-    global compar
-    compar = dict(zip(deck, value))     #making a dictonary to assign a value to each card
+    global assigned_card_value
+    assigned_card_value = dict(zip(deck, value))     #making a dictonary to assign a value to each card
     win1 = 0
     win2 = 0
+    logger = create_logger()
+    logger.info('The GAME has started')         #loging the start of the game to file 'logging'
     main_cycle(deck, win1, win2)
-    logger.info('The GAME has ended')           #loging the end of the game to file logging.txt
+    logger.info('The GAME has ended')           #loging the end of the game to file 'logging'
 
