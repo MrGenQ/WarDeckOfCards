@@ -1,15 +1,15 @@
 # WarDeckOfCards
 A standard card game, to determine which player was more lucky while playing war with a regulation deck
 
-##Getting Started
+## Getting Started
 
-###Prerequisites
+### Prerequisites
 in order to run this program you will need to install python 3 to your computer (https://www.python.org/download/releases/3.0/)
 
-###Installing
+### Installing
 https://github.com/MrGenQ/WarDeckOfCards.git, use this link to download my project
 
-###Running the tests
+### Running the tests
 
 In order to test this program you will need to open test_main_unitest.py and running the program.
 in this specific part of the code u can change the values of a card to check if testing really works
@@ -17,12 +17,12 @@ in this specific part of the code u can change the values of a card to check if 
 
 These test determine if first player's card is higher then second player's or vice versa, or even if it is a TIE.
 
-###Contributing
+### Contributing
 1.  Main contributor: Vytautas Palukaitis 
     https://github.com/MrGenQ/
 2.  mentor: Aidis Stukas
     https://github.com/aidiss
-    
+
 
 
 
