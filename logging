@@ -1,135 +1,135 @@
 WARNING: :<FileHandler C:\Users\GenQ\Desktop\WarDeckOfCards\logging (INFO)> started the program
 INFO: :The GAME has started
-INFO: :Player Jurgis
-INFO: :drew a card -- J
-INFO: :Player Tomas
-INFO: :drew a card -- 9
-INFO: :First player wins with a card: J
-INFO: :Player Jurgis
-INFO: :drew a card -- 2
-INFO: :Player Tomas
-INFO: :drew a card -- 8
-INFO: :Second player wins with a card: 8
-INFO: :Player Jurgis
-INFO: :drew a card -- 5
-INFO: :Player Tomas
-INFO: :drew a card -- 10
-INFO: :Second player wins with a card: 10
-INFO: :Player Jurgis
-INFO: :drew a card -- 6
-INFO: :Player Tomas
-INFO: :drew a card -- 8
-INFO: :Second player wins with a card: 8
-INFO: :Player Jurgis
-INFO: :drew a card -- 2
-INFO: :Player Tomas
-INFO: :drew a card -- 5
-INFO: :Second player wins with a card: 5
-INFO: :Player Jurgis
+INFO: :Player Antanas
 INFO: :drew a card -- 3
-INFO: :Player Tomas
-INFO: :drew a card -- 9
-INFO: :Second player wins with a card: 9
-INFO: :Player Jurgis
-INFO: :drew a card -- 8
-INFO: :Player Tomas
+INFO: :Player Petras
 INFO: :drew a card -- 2
+INFO: :First player wins with a card: 3
+INFO: :Player Antanas
+INFO: :drew a card -- 9
+INFO: :Player Petras
+INFO: :drew a card -- Q
+INFO: :Second player wins with a card: Q
+INFO: :Player Antanas
+INFO: :drew a card -- 8
+INFO: :Player Petras
+INFO: :drew a card -- 5
 INFO: :First player wins with a card: 8
-INFO: :Player Jurgis
-INFO: :drew a card -- 7
-INFO: :Player Tomas
+INFO: :Player Antanas
 INFO: :drew a card -- 10
-INFO: :Second player wins with a card: 10
-INFO: :Player Jurgis
-INFO: :drew a card -- K
-INFO: :Player Tomas
-INFO: :drew a card -- J
-INFO: :First player wins with a card: K
-INFO: :Player Jurgis
-INFO: :drew a card -- 4
-INFO: :Player Tomas
-INFO: :drew a card -- 6
-INFO: :Second player wins with a card: 6
-INFO: :Player Jurgis
-INFO: :drew a card -- 4
-INFO: :Player Tomas
-INFO: :drew a card -- J
-INFO: :Second player wins with a card: J
-INFO: :Player Jurgis
-INFO: :drew a card -- 10
-INFO: :Player Tomas
-INFO: :drew a card -- J
-INFO: :Second player wins with a card: J
-INFO: :Player Jurgis
-INFO: :drew a card -- 3
-INFO: :Player Tomas
-INFO: :drew a card -- 5
-INFO: :Second player wins with a card: 5
-INFO: :Player Jurgis
-INFO: :drew a card -- 5
-INFO: :Player Tomas
-INFO: :drew a card -- 7
-INFO: :Second player wins with a card: 7
-INFO: :Player Jurgis
+INFO: :Player Petras
 INFO: :drew a card -- 9
-INFO: :Player Tomas
-INFO: :drew a card -- A
-INFO: :Second player wins with a card: A
-INFO: :Player Jurgis
-INFO: :drew a card -- K
-INFO: :Player Tomas
+INFO: :First player wins with a card: 10
+INFO: :Player Antanas
 INFO: :drew a card -- Q
-INFO: :First player wins with a card: K
-INFO: :Player Jurgis
-INFO: :drew a card -- 7
-INFO: :Player Tomas
-INFO: :drew a card -- 2
-INFO: :First player wins with a card: 7
-INFO: :Player Jurgis
-INFO: :drew a card -- Q
-INFO: :Player Tomas
-INFO: :drew a card -- 3
+INFO: :Player Petras
+INFO: :drew a card -- 5
 INFO: :First player wins with a card: Q
-INFO: :Player Jurgis
-INFO: :drew a card -- K
-INFO: :Player Tomas
-INFO: :drew a card -- 10
-INFO: :First player wins with a card: K
-INFO: :Player Jurgis
-INFO: :drew a card -- Q
-INFO: :Player Tomas
-INFO: :drew a card -- A
-INFO: :Second player wins with a card: A
-INFO: :Player Jurgis
-INFO: :drew a card -- 4
-INFO: :Player Tomas
-INFO: :drew a card -- A
-INFO: :Second player wins with a card: A
-INFO: :Player Jurgis
+INFO: :Player Antanas
+INFO: :drew a card -- 7
+INFO: :Player Petras
+INFO: :drew a card -- J
+INFO: :Second player wins with a card: J
+INFO: :Player Antanas
 INFO: :drew a card -- 3
-INFO: :Player Tomas
+INFO: :Player Petras
 INFO: :drew a card -- 4
 INFO: :Second player wins with a card: 4
-INFO: :Player Jurgis
+INFO: :Player Antanas
+INFO: :drew a card -- K
+INFO: :Player Petras
+INFO: :drew a card -- 6
+INFO: :First player wins with a card: K
+INFO: :Player Antanas
+INFO: :drew a card -- A
+INFO: :Player Petras
+INFO: :drew a card -- 2
+INFO: :First player wins with a card: A
+INFO: :Player Antanas
+INFO: :drew a card -- A
+INFO: :Player Petras
+INFO: :drew a card -- 3
+INFO: :First player wins with a card: A
+INFO: :Player Antanas
+INFO: :drew a card -- A
+INFO: :Player Petras
+INFO: :drew a card -- 3
+INFO: :First player wins with a card: A
+INFO: :Player Antanas
+INFO: :drew a card -- J
+INFO: :Player Petras
+INFO: :drew a card -- 4
+INFO: :First player wins with a card: J
+INFO: :Player Antanas
+INFO: :drew a card -- Q
+INFO: :Player Petras
+INFO: :drew a card -- 8
+INFO: :First player wins with a card: Q
+INFO: :Player Antanas
+INFO: :drew a card -- 9
+INFO: :Player Petras
+INFO: :drew a card -- 8
+INFO: :First player wins with a card: 9
+INFO: :Player Antanas
+INFO: :drew a card -- 10
+INFO: :Player Petras
+INFO: :drew a card -- K
+INFO: :Second player wins with a card: K
+INFO: :Player Antanas
+INFO: :drew a card -- 9
+INFO: :Player Petras
+INFO: :drew a card -- K
+INFO: :Second player wins with a card: K
+INFO: :Player Antanas
+INFO: :drew a card -- 2
+INFO: :Player Petras
+INFO: :drew a card -- 2
+INFO: :It's a Tie
+INFO: :Player Antanas
 INFO: :drew a card -- 7
-INFO: :Player Tomas
+INFO: :Player Petras
+INFO: :drew a card -- 10
+INFO: :Second player wins with a card: 10
+INFO: :Player Antanas
+INFO: :drew a card -- Q
+INFO: :Player Petras
+INFO: :drew a card -- J
+INFO: :First player wins with a card: Q
+INFO: :Player Antanas
+INFO: :drew a card -- 5
+INFO: :Player Petras
+INFO: :drew a card -- J
+INFO: :Second player wins with a card: J
+INFO: :Player Antanas
+INFO: :drew a card -- 6
+INFO: :Player Petras
+INFO: :drew a card -- 7
+INFO: :Second player wins with a card: 7
+INFO: :Player Antanas
+INFO: :drew a card -- 6
+INFO: :Player Petras
+INFO: :drew a card -- 4
+INFO: :First player wins with a card: 6
+INFO: :Player Antanas
+INFO: :drew a card -- A
+INFO: :Player Petras
+INFO: :drew a card -- 6
+INFO: :First player wins with a card: A
+INFO: :Player Antanas
+INFO: :drew a card -- 4
+INFO: :Player Petras
 INFO: :drew a card -- 8
 INFO: :Second player wins with a card: 8
-INFO: :Player Jurgis
-INFO: :drew a card -- 6
-INFO: :Player Tomas
-INFO: :drew a card -- 6
-INFO: :It's a Tie
-INFO: :Player Jurgis
-INFO: :drew a card -- Q
-INFO: :Player Tomas
-INFO: :drew a card -- A
-INFO: :Second player wins with a card: A
-INFO: :Player Jurgis
+INFO: :Player Antanas
+INFO: :drew a card -- 7
+INFO: :Player Petras
+INFO: :drew a card -- 10
+INFO: :Second player wins with a card: 10
+INFO: :Player Antanas
 INFO: :drew a card -- K
-INFO: :Player Tomas
-INFO: :drew a card -- 9
+INFO: :Player Petras
+INFO: :drew a card -- 5
 INFO: :First player wins with a card: K
-INFO: :First player won - 8
-INFO: :Second player won - 17
+INFO: :First player won - 15
+INFO: :Second player won - 10
 INFO: :The GAME has ended

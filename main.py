@@ -71,7 +71,8 @@ def compare_cards(C1, C2, deck, compar):
     elif C1 > C2:
         return 0
     elif C1 == C2:
-        return -1  
+        return -1 
+ 
 
 if __name__ == "__main__":
     
