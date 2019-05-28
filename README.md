@@ -1,7 +1,7 @@
 # WarDeckOfCards
 A standard card game, to determine which player was more lucky while playing war with a regulation deck
 
-##Getting Started
+## Getting Started
 
 ###Prerequisites
 in order to run this program you will need to install python 3 to your computer (https://www.python.org/download/releases/3.0/)
