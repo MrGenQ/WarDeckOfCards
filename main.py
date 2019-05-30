@@ -40,7 +40,10 @@ def main_cycle(deck, win1, win2):
         deck.pop(card)
         player2 = deal_cards(deck, card)
         pl2 = assigned_card_value.get(player2)
-        deck.pop(card)  
+        deck.pop(card)
+        
+        counter_n_1 = args.p1name
+          
         logger.info("Player %s ", args.p1name + " drew a card -> " + player1)
         logger.info("Player %s ", args.p2name + " drew a card -> " + player2)
         if pl1 > pl2:
@@ -62,6 +65,8 @@ def main_cycle(deck, win1, win2):
     else:
         logger.info("Result: It's a TIE")
 
+
+    
 
 def compare_cards(card1, card2, deck, assigned_card_value):
     """A function for testing to determine which of the two cards is higher """
@@ -93,7 +98,6 @@ def create_logger():
     return logger
 
 if __name__ == "__main__":
-
     deck = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']*4
     value = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
     global assigned_card_value
