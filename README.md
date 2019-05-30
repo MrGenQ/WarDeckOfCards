@@ -9,10 +9,10 @@ A standard card game, to determine which player was more lucky while playing war
 in order to run this program you will need to install python 3 to your computer (https://www.python.org/download/releases/3.0/)
 
 ### Installing
-https://github.com/MrGenQ/WarDeckOfCards.git, use this link to download my project
+git clone https://github.com/MrGenQ/WarDeckOfCards.git, use this link to download my project in your Command Prompt or Terminal
 
 ### Running the program
-When you finished downloading this project, open main.py and start the program by debugging it or use a feature i created by typing 'python main.py --p1name=Tom --p2name=Jim' in the Terminal, open logging file to see what the program events have been logged. Ofcourse you can use different names instead of 'Tom' and 'Jim', there is only one rule - Use only solid text (no spaces)
+When you finished downloading this project, open main.py and start the program by debugging it or use a feature i created by typing `python main.py --p1name=Tom --p2name=Jim` in the Terminal, open logging file to see what the program events have been logged. Ofcourse you can use different names instead of 'Tom' and 'Jim', there is only one rule - Use only solid text (no spaces)
 
 ### Running the tests
 

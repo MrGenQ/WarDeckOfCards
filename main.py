@@ -43,7 +43,6 @@ def main_cycle(deck, win1, win2):
         deck.pop(card)  
         logger.info("Player %s ", args.p1name + " drew a card -> " + player1)
         logger.info("Player %s ", args.p2name + " drew a card -> " + player2)
-
         if pl1 > pl2:
             win1 += 1
             logger.info("First player wins with a card: %s", player1)
@@ -52,9 +51,12 @@ def main_cycle(deck, win1, win2):
             logger.info("Second player wins with a card: %s", player2)
         elif pl1 == pl2:
             logger.info("It's a Tie")
-
-    logger.info("First player won - %s", win1)
-    logger.info("Second player won - %s", win2)
+    if win1 > win2:
+        logger.info("%s won more times", args.p1name)
+    elif win1 < win2:
+        logger.info("%s won more times", args.p2name)
+    else:
+        logger.info("Result: It's a TIE")
 
 
 def compare_cards(card1, card2, deck, assigned_card_value):
