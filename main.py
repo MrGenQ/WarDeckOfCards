@@ -52,8 +52,12 @@ def main_cycle(deck, win1, win2):
         elif pl1 == pl2:
             logger.info("It's a Tie")
     if win1 > win2:
+        with open('winners.txt', 'a') as f:
+            f.write(args.p1name + "\n")
         logger.info("%s won more times", args.p1name)
     elif win1 < win2:
+        with open('winners.txt', 'a') as f:
+            f.write("       " + args.p2name + "\n")
         logger.info("%s won more times", args.p2name)
     else:
         logger.info("Result: It's a TIE")
