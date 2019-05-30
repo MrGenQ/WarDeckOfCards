@@ -1,6 +1,6 @@
 # WarDeckOfCards
 A standard card game, to determine which player was more lucky while playing war with a regulation deck
-![alt text](desktop/WarDeckOfCards/download.png "Description goes here")
+![alt text](C:\Users\GenQ\Desktop\WarDeckOfCards\download.png)
 ## Getting Started
 
 ### Prerequisites
