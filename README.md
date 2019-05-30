@@ -13,7 +13,7 @@ https://github.com/MrGenQ/WarDeckOfCards.git, use this link to download my proje
 
 In order to test this program you will need to open test_main_unitest.py and running the program.
 in this specific part of the code u can change the values of a card to check if testing really works
-"self.assertEqual(compare_cards('J', 'A', deck, compar), 1)"
+"self.assertEqual(compare_cards('J', 'A', deck, assigned_card_value), 1)"
 
 These test determine if first player's card is higher then second player's or vice versa, or even if it is a TIE.
 
