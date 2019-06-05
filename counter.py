@@ -1,5 +1,6 @@
 
 def counter():
+        '''A function to count how many times a specific word occurs in a text'''
         count=0
         
         for line in player:
@@ -13,7 +14,6 @@ should_continue = 'yes'
 
 while should_continue != 'no' and should_continue == 'yes':
         player_name = input("Please select which player's win count you want to know: ")
-        print (player_name)
         counted = counter()
         print("player ", player_name, "won ", counted, " times")
         should_continue = input("Do you wish to check another player? type: 'yes' or 'no' ")
