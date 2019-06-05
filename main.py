@@ -42,8 +42,6 @@ def main_cycle(deck, win1, win2):
         pl2 = assigned_card_value.get(player2)
         deck.pop(card)
         
-        counter_n_1 = args.p1name
-          
         logger.info("Player %s ", args.p1name + " drew a card -> " + player1)
         logger.info("Player %s ", args.p2name + " drew a card -> " + player2)
         if pl1 > pl2:
