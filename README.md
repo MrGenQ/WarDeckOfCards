@@ -1,6 +1,6 @@
 # WarDeckOfCards
 
-![alt text](https://github.com/MrGenQ/WarDeckOfCards/blob/master/download.png)
+![alt text](https://github.com/MrGenQ/WarDeckOfCards/blob/master/downloaded.png)
 ## Getting Started
 
 A standard card game, to determine which player was more lucky while playing war with a regulation deck
