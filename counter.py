@@ -1,10 +1,31 @@
-count=0
+
+def counter():
+        count=0
+        
+        for line in player:
+                if player_name in line:
+                        count += 1
+        return count
+        
 f=open('winners.txt','r')
 player=f.readlines()
-for line in player:
-    if counter_n_1 in line:
-        count=count+1
-print(count)
-f.close()
+should_continue = 'yes'
 
-#python counter reikia importuotis
+while should_continue != 'no' and should_continue == 'yes':
+        player_name = input("Please select which player's win count you want to know: ")
+        print (player_name)
+        counted = counter()
+        print("player ", player_name, "won ", counted, " times")
+        should_continue = input("Do you wish to check another player? type: 'yes' or 'no' ")
+        if_true = True
+        while if_true == True:
+                if should_continue == 'yes':
+                        pass
+                elif should_continue =='no':
+                        pass
+                else:
+                        print ("Selected wrong command, try again")
+                        should_continue = input("Do you wish to check another player? type: 'yes' or 'no' ")  
+                if_true = False     
+
+f.close()
